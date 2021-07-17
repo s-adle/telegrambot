@@ -1,4 +1,5 @@
 from telegram.ext import Updater, MessageHandler, Filters
+
 def demo1(bot,update):
    bot.message.reply_text('I am fine')
 def demo2(bot,update):
@@ -12,6 +13,7 @@ def main(bot,update):
     demo2(bot,update)
   else :
     bot.message.reply_text('invalid text')
+      
 BOT_TOKEN = '1936488577:AAFSC83Z99TDDOZuG8g65fC6pOEfUElXkI0'
 u= Updater(BOT_TOKEN,use_context=True)
 dp=u.dispatcher
